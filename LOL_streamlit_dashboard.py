@@ -35,7 +35,7 @@ if pageSelect==SELECTIONS[0]:
              'also gradually accepted by the public. Take the phenomenal game League of Legends as an example: the top professional '
              'League of Legends players are often hyped up on the internet due to their sky-high salaries.')
     st.write("In this project, we want to examine variables that affect professional league of legend players' salaries "
-             "and build a best predictive model to predict a professional their salary given his past tournament winning"
+             "and build a best predictive model to predict a professional player's salary given his/her past tournament winning"
              " history, region of competition, and his/her role in a team.")
     st.markdown("The data used in this project comes from two sources: <i><a href='https://www.kaggle.com/michau96/the-best-in-league-of-legend-history'>Kaggle</a></i> "
                 "and <i><a href='https://www.trackingthepros.com/PLAYERS'>TrackingThePros.com</a></i>. Both of the two "
