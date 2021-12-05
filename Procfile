@@ -1,0 +1,1 @@
+web: sh setup.sh && streamlit run LOL_streamlit_dashboard.py
