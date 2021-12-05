@@ -101,7 +101,6 @@ elif pageSelect==SELECTIONS[1]:
     china = 0; japan = 0; euro = 0; korea = 0;  latA = 0; norAa = 0; ocean = 0; pcs =0; russia = 0; turkey = 0; viet = 0;
     coach = 0; jG = 0; mid = 0; nofix = 0; supp = 0; top = 0;
 
-    st.write(regionSelect)
 
     if regionSelect == 'China':
         china = 1;
@@ -146,7 +145,7 @@ elif pageSelect==SELECTIONS[1]:
     inputDF = pd.DataFrame(inputDict, index=[9999])
     predictedSalary = linear_reg.predict(inputDF)
     st.write(f"<p style=' font-size: 24px;'> The main effect model predicts that the {roleSelect} "
-             f"players' average salary in {regionSelect}, given above merit input, "
+             f"players' average salary in {regionSelect}, given above merit inputs, "
              f"would be <b> ${predictedSalary[0].round(2) } </b> per year.", unsafe_allow_html=True)
 
     from sklearn import metrics
@@ -275,7 +274,7 @@ elif pageSelect==SELECTIONS[2]:
     inputDF = pd.DataFrame(inputDict, index=[9999])
     predictedSalary = linear_reg.predict(inputDF)
     st.write(f"<p style=' font-size: 24px;'> The log-transformed main effect model predicts that the {roleSelect} "
-             f"players' average salary in {regionSelect}, given above merit input, "
+             f"players' average salary in {regionSelect}, given above merit inputs, "
              f"would be <b> ${np.exp(predictedSalary[0]).round(2) } </b> per year.", unsafe_allow_html=True)
 
     from sklearn import metrics
