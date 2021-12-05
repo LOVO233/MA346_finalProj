@@ -27,7 +27,7 @@ pageSelect = st.sidebar.selectbox('Please choose a page to visit', SELECTIONS)
 
 if pageSelect==SELECTIONS[0]:
     st.title("Final Project Dashboard: League of Legend Professional E-Sport Player Data Analytics")
-    st.markdown('<p style="font-family:monospace; color:black; font-size: 12px;">Your can select page using the sidebar on the left.</p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-family:monospace; color:black; font-size: 12px;">Your can select a page using the sidebar on the left.</p>', unsafe_allow_html=True)
     st.markdown(f'<p style="font-family:monospace; color:black; font-size: 12px;">Currently, you are visiting <i><b> {SELECTIONS[0]} </b></i> Page.</p>', unsafe_allow_html=True)
     st.write('In the past, when it comes to online games, people had great misconceptions and prejudices, simply equating '
              'online games with "a waste of time." However, in the 21st century, online gaming has become not only a form '
@@ -63,7 +63,7 @@ if pageSelect==SELECTIONS[0]:
         st.markdown("<b> Region   </b> : The region is where their sporting clubs are located, which determines where they compete. There are several different regions: North America, China, Korea, Japan, Russia, Europe, Vietnam, PCS (Pacific Championship Series), Turkey, Brazil, Oceania, Latino America. ", unsafe_allow_html=True)
 
 elif pageSelect==SELECTIONS[1]:
-    st.markdown('<p style="font-family:monospace; color:black; font-size: 12px;">Your can select page using the sidebar on the left.</p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-family:monospace; color:black; font-size: 12px;">Your can select a page using the sidebar on the left.</p>', unsafe_allow_html=True)
     st.markdown(f'<p style="font-family:monospace; color:black; font-size: 12px;">Currently, you are visiting <i><b> {SELECTIONS[1]} </b></i> Page.</p>', unsafe_allow_html=True)
     lm_Dataset = pd.read_csv('cleaned_LOL.csv')
     X = lm_Dataset[['Reg', 'Role', 'gold', 'silver', 'bronze', 's-tier']]
@@ -188,7 +188,7 @@ elif pageSelect==SELECTIONS[1]:
 
 
 elif pageSelect==SELECTIONS[2]:
-    st.markdown('<p style="font-family:monospace; color:black; font-size: 12px;">Your can select page using the sidebar on the left.</p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-family:monospace; color:black; font-size: 12px;">Your can select a page using the sidebar on the left.</p>', unsafe_allow_html=True)
     st.markdown(f'<p style="font-family:monospace; color:black; font-size: 12px;">Currently, you are visiting <i><b> {SELECTIONS[2]} </b></i> Page.</p>', unsafe_allow_html=True)
 
     lm_Dataset = pd.read_csv('cleaned_LOL.csv')
@@ -309,7 +309,7 @@ elif pageSelect==SELECTIONS[2]:
     plt.ylabel('frequency')
     st.pyplot(plt)
 elif pageSelect==SELECTIONS[3]:
-    st.markdown('<p style="font-family:monospace; color:black; font-size: 12px;">Your can select page using the sidebar on the left.</p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-family:monospace; color:black; font-size: 12px;">Your can select a page using the sidebar on the left.</p>', unsafe_allow_html=True)
     st.markdown(f'<p style="font-family:monospace; color:black; font-size: 12px;">Currently, you are visiting <i><b> {SELECTIONS[3]} </b></i> Page.</p>', unsafe_allow_html=True)
     st.write("Is the log-transformed main effect model certainly the best model at predicting professional league of "
              "legend players' salaries? Absolutely not. There are a lot more potential improvements that we can try on "
